@@ -1,0 +1,12 @@
+# Services
+services:
+  # Apache + PHP
+  apache_php:
+    image: php:8-apache
+    # Preparem un volum per desar el codi de l'App
+    volumes:
+      - ./src/:/aleix
+    expose:
+      - 80
+    ports:
+      - 8080:80
