@@ -5,7 +5,7 @@ services:
     image: php:8-apache
     # Preparem un volum per desar el codi de l'App
     volumes:
-      - ./src/:/aleix
+      - .\src/:/var/www/html
     expose:
       - 80
     ports:
